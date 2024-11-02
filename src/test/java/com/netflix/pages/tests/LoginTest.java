@@ -25,7 +25,7 @@ public class LoginTest {
     }
 
     @Test
-    @DisplayName("Тест: неуказан логин и пароль")
+    @DisplayName("Тест: не указан логин и пароль")
     public void testSignInWithEmptyLoginAndPassword() {
         loginPage.clickSignInButton();
 
@@ -34,7 +34,7 @@ public class LoginTest {
     }
 
     @Test
-    @DisplayName("Тест: неуказан пароль")
+    @DisplayName("Тест: не указан пароль")
     public void testSignInWithEmptyPassword() {
         loginPage.inputEmailAddress(EMAIL);
         loginPage.clickSignInButton();
