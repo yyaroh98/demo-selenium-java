@@ -22,10 +22,9 @@ public class LoginPage {
     }
 
     public void inputPassword(String password) {
-        WebElement inputEmailAddressWebElement = driver.findElement(By.xpath(LoginXpath.INPUT_PASSWORD));
-        inputEmailAddressWebElement.sendKeys(password);
+        WebElement inputPasswordAddressWebElement = driver.findElement(By.xpath(LoginXpath.INPUT_PASSWORD));
+        inputPasswordAddressWebElement.sendKeys(password);
     }
-
 
     public String getErrorMessagePasswordField() {
         WebElement textMessage = driver.findElement(By.xpath(LoginXpath.PASSWORD_FIELD_ERROR_MESSAGE));
